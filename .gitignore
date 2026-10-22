@@ -1,0 +1,23 @@
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Node / React
+**/node_modules/
+**/dist/
+**/build/
+frontend/.env
+frontend/.env.local
+
+# Java / Spring Boot
+**/target/
+**/build/
+**/.gradle/
+**/*.jar
+**/*.war
+
+# Log
+*.log
