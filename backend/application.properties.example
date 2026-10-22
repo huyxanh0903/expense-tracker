@@ -1,0 +1,22 @@
+# ================================================================
+# Application Properties Template for Spring Boot + SQL Server
+# Sao chép nội dung này vào file `application.properties` để chạy
+# ================================================================
+
+server.port=8080
+
+# Cấu hình kết nối Microsoft SQL Server
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=expense_tracker_db;encrypt=true;trustServerCertificate=true
+spring.datasource.username=sa
+spring.datasource.password=YOUR_SQL_SERVER_PASSWORD
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# Hibernate & JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+
+# JWT Configuration (Tuỳ chọn)
+jwt.secret=9a4f2c8d3b7a1e6f5c8d0e2b4a6c8e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3
+jwt.expiration-ms=86400000

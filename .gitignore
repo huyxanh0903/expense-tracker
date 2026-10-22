@@ -1,23 +1,53 @@
-# OS & IDE
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
 .DS_Store
 Thumbs.db
+desktop.ini
+
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
 
-# Node / React
+# ==========================================
+# Frontend (React / Vite / Node.js)
+# ==========================================
 **/node_modules/
 **/dist/
 **/build/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Local Secrets
 frontend/.env
 frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
 
-# Java / Spring Boot
+# ==========================================
+# Backend (Java / Spring Boot / Maven / Gradle)
+# ==========================================
 **/target/
 **/build/
 **/.gradle/
 **/*.jar
 **/*.war
+**/*.class
 
-# Log
+# Local secret properties (chứa mật khẩu DB thật)
+backend/src/main/resources/application.properties
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-secret.properties
+
+# ==========================================
+# Logs & Temp Files
+# ==========================================
 *.log
+logs/
+tmp/
+temp/
